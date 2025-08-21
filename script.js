@@ -6,3 +6,10 @@ function toggleMenu() {
     icon.classList.toggle("open");
     
 }
+
+function downloadCV() {
+  const link = document.createElement('a');
+  link.href = './assets/INTI-CV.pdf';
+  link.download = 'INTI-CV.pdf';
+  link.click();
+}
