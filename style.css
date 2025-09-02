@@ -466,6 +466,7 @@ section {
 
 .tech-stack__icons .icon:hover {
     transform: scale(1.15);
+    cursor: default;
 }
 @media screen and (max-width: 768px) {
    
