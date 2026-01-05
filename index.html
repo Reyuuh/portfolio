@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/mediaqueries.css">
     
 </head>
 <body>
@@ -21,21 +21,25 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Inti Rodriguez Flores</div>
-        <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="menu-links">
-         <li><a href="#about" onclick="toggleMenu()">About</a></li>
-         <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-         <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-         <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-        </div>
-    </nav>
+  <div class="hamburger-top">
+    <div class="logo">Inti Rodriguez Flores</div>
+
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <ul class="menu-links">
+  <li><a href="#about" onclick="toggleMenu()">About</a></li>
+  <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+  <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+  <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+</ul>
+
+</nav>
+
     <section id="profile">
         <div class="section__pic-container">
             <img src="./assets/linked in prof pic.jpg" alt="Inti Rodriguez Flores" >
@@ -153,9 +157,65 @@
     </div>
 </section>
 
+
+
+<section id="contact">
+  <div class="section-container">
+    <div class="contact__content">
+      <h2 class="title">Contact</h2>
+      <p class="contact__text">
+        Open to internship (LIA) opportunities, collaborations, and freelance projects.
+        The fastest way to reach me is by email.
+      </p>
+
+      <div class="contact__details">
+        <a class="contact__item" href="mailto:intirey4@gmail.com?subject=Contact%20from%20Portfolio">
+          <img src="./assets/email-icon.png" alt="Email" class="icon contact-icon">
+          <div class="contact__meta">
+            <span class="contact__label">Email</span>
+            <span class="contact__value">intirey4@gmail.com</span>
+          </div>
+        </a>
+
+        <a class="contact__item" href="tel:+46700544729">
+          <img src="./assets/telephone.png" alt="Phone" class="icon contact-icon">
+          <div class="contact__meta">
+            <span class="contact__label">Phone</span>
+            <span class="contact__value">+46 70 054 47 29</span>
+          </div>
+        </a>
+
+        <a class="contact__item" href="https://www.linkedin.com/in/inti-rodrigo/" target="_blank" rel="noopener">
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="icon contact-icon">
+          <div class="contact__meta">
+            <span class="contact__label">LinkedIn</span>
+            <span class="contact__value">linkedin.com/in/inti-rodrigo</span>
+          </div>
+        </a>
+
+        <a class="contact__item" href="https://github.com/Reyuuh/" target="_blank" rel="noopener">
+          <img src="./assets/github.png" alt="GitHub" class="icon contact-icon">
+          <div class="contact__meta">
+            <span class="contact__label">GitHub</span>
+            <span class="contact__value">github.com/Reyuuh</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="btn-container">
+        <button class="btn btn-color-1"
+          onclick="location.href='mailto:intirey4@gmail.com?subject=Contact%20from%20Portfolio&amp;body=Hi%20Inti%2C%0A%0A%5BWrite%20your%20message%20here%5D%0A%0ABest%2C'">
+          Email me
+        </button>
+        <button class="btn btn-color-2" onclick="location.href='https://www.linkedin.com/in/inti-rodrigo/'">
+          Connect on LinkedIn
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
     
-<!-- ...existing code... -->
-    
-    <script src="script.js"></script>
+    <script src="src/script.js"></script>
 </body>
 </html>
