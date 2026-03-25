@@ -1,15 +1,15 @@
-function toggleMenu() {
+const toggle = document.getElementById('theme-toggle');
+const body = document.body;
 
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-    
+// Apply saved preference on load
+if (localStorage.getItem('theme') === 'dark') {
+  body.classList.add('dark');
+  toggle.textContent = '☀️';
 }
 
-function downloadCV() {
-  const link = document.createElement('a');
-  link.href = './assets/INTI-CV.pdf';
-  link.download = 'INTI-CV.pdf';
-  link.click();
-}
+toggle.addEventListener('click', () => {
+  body.classList.toggle('dark');
+  const isDark = body.classList.contains('dark');
+  toggle.textContent = isDark ? '☀️' : '🌙';
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+});

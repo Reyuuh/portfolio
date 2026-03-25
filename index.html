@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Inti Rodriguez Flores</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="src/mediaqueries.css">
     
@@ -11,34 +12,16 @@
 <body>
     <nav id="desktop-nav">
         <div class="logo">Inti Rodriguez Flores</div>
-        <div>
+        <div style="display:flex; align-items:center; gap:2rem;">
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
         </div>
     </nav>
-    <nav id="hamburger-nav">
-  <div class="hamburger-top">
-    <div class="logo">Inti Rodriguez Flores</div>
-
-    <div class="hamburger-icon" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-
-  <ul class="menu-links">
-  <li><a href="#about" onclick="toggleMenu()">About</a></li>
-  <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-  <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-  <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-</ul>
-
-</nav>
 
     <section id="profile">
         <div class="section__pic-container">
@@ -62,7 +45,6 @@
     </section>
 
     
-   <!-- ...existing code... -->
 <section id="about">
     <div class="section-container">
         <div class="about__content">
@@ -76,29 +58,72 @@
         </div>
     </div>
 </section>
+    <section id="experience">
+        <div class="section-container">
+            <div class="experience__content">
+                <h2 class="title">Experience</h2>
+                <div class="experience__list">
+
+                    <div class="experience__card">
+                        <div class="experience__header">
+                            <div>
+                                <h3 class="experience__title">Full-stack Developer Intern</h3>
+                                <span class="experience__company">Brineline Games</span>
+                            </div>
+                            <span class="experience__date">Sep 2025 – Present</span>
+                        </div>
+                        <p class="experience__desc">Working on the company's web platform including e-commerce, community forum, and card creator tool. Building and maintaining features using React, JavaScript, Node.js, and MySQL.</p>
+                    </div>
+
+                    <div class="experience__card">
+                        <div class="experience__header">
+                            <div>
+                                <h3 class="experience__title">Web Developer — E-commerce Specialization</h3>
+                                <span class="experience__company">Medieinstitutet (YH)</span>
+                            </div>
+                            <span class="experience__date">2024 – May 2026</span>
+                        </div>
+                        <p class="experience__desc">Vocational higher education in full-stack web development with a focus on e-commerce. Covering frontend and backend development with HTML5, CSS3, JavaScript, React, PHP, Node.js, SQL, and API integration.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="projects">
         <div class="section-container">
             <div class="projects__content">
                 <h2 class="title">Projects</h2>
                 <div class="projects__list">
                     <div class="project-card">
-                        <h3 class="project-title">Pokédex App</h3>
-                        <p class="project-desc">En webbaserad Pokédex byggd med <strong>React</strong> och <strong>TypeScript</strong>. 
-            Användaren kan söka efter Pokémon, visa detaljerad information och filtrera efter typ. 
-            Applikationen hämtar data från <strong>PokéAPI</strong> och är fullt responsiv.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/Reyuuh/PokeDex" target="_blank" class="project-link">View Project</a>
-                            <!-- Example icon link: <a href="https://github.com/" target="_blank"><img src="./assets/github.png" alt="GitHub" class="icon"></a> -->
+                        <img src="./assets/pokedex.gif" alt="Pokédex App demo" class="project-img">
+                        <div class="project-card-body">
+                            <h3 class="project-title">Pokédex App</h3>
+                            <p class="project-desc">A web-based Pokédex built with <strong>React</strong> and <strong>TypeScript</strong>. Users can search for Pokémon, view detailed information, and filter by type. The app fetches data from the <strong>PokéAPI</strong> and is fully responsive.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Reyuuh/PokeDex" target="_blank" class="project-link">View Project</a>
+                            </div>
                         </div>
                     </div>
                     <div class="project-card">
-                        <h3 class="project-title">One Piece Card Shop</h3>
-                        <p class="project-desc">En webbutik inspirerad av <strong>One Piece</strong>, byggd med <strong>PHP</strong> och <strong>MySQL</strong>. 
-            Användaren kan bläddra bland kort, filtrera efter kategorier och se detaljerad produktinformation. 
-            Backend hanterar databaslagring av kort och kategorier.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/Reyuuh/OnePiece-Cardshop" target="_blank" class="project-link">View Project</a>
-                            <!-- Example icon link: <a href="https://github.com/" target="_blank"><img src="./assets/github.png" alt="GitHub" class="icon"></a> -->
+                        <div class="project-card-body">
+                            <h3 class="project-title">One Piece Card Shop</h3>
+                            <p class="project-desc">An online card shop inspired by <strong>One Piece</strong>, built with <strong>PHP</strong> and <strong>MySQL</strong>. Users can browse cards, filter by category, and view detailed product information. The backend handles database storage for cards and categories.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Reyuuh/OnePiece-Cardshop" target="_blank" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./assets/eshop.png" alt="E-Shop SoulCaller screenshot" class="project-img">
+                        <div class="project-card-body">
+                            <h3 class="project-title">E-Shop SoulCaller</h3>
+                            <p class="project-desc">A fullstack e-commerce platform with product browsing, shopping cart, user authentication, and <strong>Stripe</strong> payment integration. Built with <strong>React</strong>, <strong>Redux</strong>, and <strong>SCSS</strong> on the frontend, and <strong>Node.js</strong>, <strong>Express</strong>, <strong>MySQL</strong>, and <strong>JWT</strong> on the backend.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Reyuuh/eshop-soulcaller-frontend" target="_blank" class="project-link">Frontend</a>
+                                <a href="https://github.com/Reyuuh/eshop-soulcaller-backend" target="_blank" class="project-link">Backend</a>
+                            </div>
                         </div>
                     </div>
                 </div>

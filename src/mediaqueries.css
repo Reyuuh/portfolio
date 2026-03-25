@@ -1,11 +1,70 @@
-@media screen and (max-width: 1200px) {
-    #desktop-nav {
-        display: none;
+@media screen and (max-width: 768px) {
+    nav {
+        height: auto;
+        padding: 0.75rem 1.5rem;
+        gap: 0.5rem;
+        flex-direction: column;
     }
-    
-    #hamburger-nav {
-        display: flex;
-    }
-    
-}
 
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .nav-links {
+        font-size: 0.9rem;
+        gap: 1.2rem;
+    }
+
+    section {
+        padding: 2rem 1rem;
+        margin: 0;
+    }
+
+    #profile {
+        padding: 4rem 1.5rem 3.5rem;
+    }
+
+    #profile .title {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: clamp(1.6rem, 5vw, 2.2rem);
+    }
+
+    .about__content,
+    .experience__content,
+    .projects__content,
+    .tech-stack__content,
+    .contact__content {
+        max-width: 95%;
+    }
+
+    .projects__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .tech-stack__icons {
+        gap: 1rem;
+    }
+
+    .tech-stack__icons .icon {
+        height: 1.7rem;
+        width: 1.7rem;
+    }
+
+    .contact__details {
+        grid-template-columns: 1fr;
+    }
+
+    .experience__header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
