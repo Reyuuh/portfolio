@@ -11,7 +11,7 @@
 <body>
     <nav id="desktop-nav">
         <div class="logo">Inti Rodriguez Flores</div>
-        <div style="display:flex; align-items:center; gap:2rem;">
+        <div style="display:flex; align-items:center; gap:1.5rem;">
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -19,6 +19,11 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+            <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
@@ -41,6 +46,11 @@
                 class="icon" onclick="location.href='https://github.com/Reyuuh/'">
             </div>
         </div>
+        <a href="#about" class="scroll-hint" aria-label="Scroll down">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </a>
     </section>
 
 <section id="about">
@@ -161,37 +171,94 @@
                 <div class="tech-stack__card reveal">
                     <h3>Frontend</h3>
                     <div class="tech-stack__icons">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="icon" alt="HTML5" title="HTML5" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="icon" alt="CSS3" title="CSS3" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="icon" alt="JavaScript" title="JavaScript" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="icon" alt="TypeScript" title="TypeScript" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="icon" alt="React" title="React" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" class="icon" alt="Vite" title="Vite" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" class="icon" alt="Next.js" title="Next.js" />
+                        <div class="tech-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="icon" alt="HTML5" />
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="icon" alt="CSS3" />
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="icon" alt="JavaScript" />
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="icon" alt="TypeScript" />
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="icon" alt="React" />
+                            <span>React</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" class="icon" alt="Vite" />
+                            <span>Vite</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" class="icon" alt="Next.js" />
+                            <span>Next.js</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="tech-stack__card reveal">
                     <h3>Backend</h3>
                     <div class="tech-stack__icons">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" class="icon" alt="Node.js" title="Node.js" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" class="icon" alt="PHP" title="PHP" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" class="icon" alt="MongoDB" title="MongoDB" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg" class="icon" alt="Socket.io" title="Socket.io" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" class="icon" alt="MySQL" title="MySQL" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="icon" alt="Python" title="Python" />
+                        <div class="tech-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" class="icon" alt="Node.js" />
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" class="icon" alt="PHP" />
+                            <span>PHP</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" class="icon" alt="MongoDB" />
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg" class="icon" alt="Socket.io" />
+                            <span>Socket.io</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" class="icon" alt="MySQL" />
+                            <span>MySQL</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="icon" alt="Python" />
+                            <span>Python</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="tech-stack__card reveal">
                     <h3>Tools</h3>
                     <div class="tech-stack__icons">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="icon" alt="Git" title="Git" />
-                        <img src="./assets/github.png" class="icon" alt="GitHub" title="GitHub" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" class="icon" alt="Visual Studio Code" title="Visual Studio Code" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg" class="icon" alt="WordPress" title="WordPress" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypressio/cypressio-original.svg" class="icon" alt="Cypress" title="Cypress" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/woocommerce/woocommerce-original.svg" class="icon" alt="WooCommerce" title="WooCommerce" />
+                        <div class="tech-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="icon" alt="Git" />
+                            <span>Git</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <img src="./assets/github.png" class="icon" alt="GitHub" />
+                            <span>GitHub</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" class="icon" alt="VS Code" />
+                            <span>VS Code</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg" class="icon" alt="WordPress" />
+                            <span>WordPress</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypressio/cypressio-original.svg" class="icon" alt="Cypress" />
+                            <span>Cypress</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/woocommerce/woocommerce-original.svg" class="icon" alt="WooCommerce" />
+                            <span>WooCommerce</span>
+                        </div>
                     </div>
                 </div>
 
