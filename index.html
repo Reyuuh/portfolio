@@ -7,7 +7,6 @@
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="src/mediaqueries.css">
-    
 </head>
 <body>
     <nav id="desktop-nav">
@@ -25,12 +24,12 @@
 
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/linked in prof pic.jpg" alt="Inti Rodriguez Flores" >
+            <img src="./assets/linked in prof pic.jpg" alt="Inti Rodriguez Flores">
         </div>
         <div class="section__text">
-        
             <h1 class="title">Inti Rodriguez Flores</h1>
-            <p class="section__text__p2">Fullstack-Developer</p>
+            <p class="section__text__p2"><span id="typewriter"></span><span class="type-cursor">|</span></p>
+            <p class="hero__tagline">Building clean, fullstack web experiences from Stockholm</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/INTICV-1.pdf')">Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
@@ -44,46 +43,46 @@
         </div>
     </section>
 
-    
 <section id="about">
     <div class="section-container">
-        <div class="about__content">
+        <div class="about__content reveal">
             <h2 class="title">About Me</h2>
             <p class="about__text">
-                Hi! I'm Inti Rodriguez Flores, a passionate Fullstack Developer with experience in building modern, responsive web applications. I enjoy solving complex problems, learning new technologies, and collaborating with creative teams. My goal is to deliver high-quality solutions that make a difference.
+                I'm a fullstack developer based in Stockholm, currently completing my YH education at Medieinstitutet with a specialization in e-commerce development. During my internship at Brineline Games I built production-level features across e-commerce, a community forum, and an interactive card creator tool — working with React, Node.js and MySQL in a real agile team.
             </p>
             <p class="about__text">
-                When I'm not coding, I love exploring new places, reading tech blogs, and contributing to open-source projects. Let's connect and create something amazing together!
+                I care about writing clean, maintainable code and I enjoy working across the full stack. Outside of coding I'm learning Japanese and exploring Stockholm. Fluent in Swedish, Spanish and English.
             </p>
         </div>
     </div>
 </section>
+
     <section id="experience">
         <div class="section-container">
-            <div class="experience__content">
+            <div class="experience__content reveal">
                 <h2 class="title">Experience</h2>
                 <div class="experience__list">
 
-                    <div class="experience__card">
+                    <div class="experience__card reveal">
                         <div class="experience__header">
                             <div>
                                 <h3 class="experience__title">Full-stack Developer Intern</h3>
                                 <span class="experience__company">Brineline Games</span>
                             </div>
-                            <span class="experience__date">Sep 2025 – Present</span>
+                            <span class="experience__date">2024 – Present</span>
                         </div>
-                        <p class="experience__desc">Working on the company's web platform including e-commerce, community forum, and card creator tool. Building and maintaining features using React, JavaScript, Node.js, and MySQL.</p>
+                        <p class="experience__desc">Working on the company's web platform including e-commerce, community forum, and card creator tool. Building and maintaining features using React, JavaScript, Node.js, and MySQL. Integrated Stripe for payment processing.</p>
                     </div>
 
-                    <div class="experience__card">
+                    <div class="experience__card reveal">
                         <div class="experience__header">
                             <div>
-                                <h3 class="experience__title">Web Developer — E-commerce Specialization</h3>
+                                <h3 class="experience__title">Fullstack Web Developer — E-commerce Specialization</h3>
                                 <span class="experience__company">Medieinstitutet (YH)</span>
                             </div>
                             <span class="experience__date">2024 – May 2026</span>
                         </div>
-                        <p class="experience__desc">Vocational higher education in full-stack web development with a focus on e-commerce. Covering frontend and backend development with HTML5, CSS3, JavaScript, React, PHP, Node.js, SQL, and API integration.</p>
+                        <p class="experience__desc">Vocational higher education in full-stack web development with a focus on e-commerce. Covering frontend and backend development with HTML5, CSS3, JavaScript, React, PHP, Node.js, SQL, and API integration. Includes two internship periods.</p>
                     </div>
 
                 </div>
@@ -93,39 +92,61 @@
 
     <section id="projects">
         <div class="section-container">
-            <div class="projects__content">
+            <div class="projects__content reveal">
                 <h2 class="title">Projects</h2>
                 <div class="projects__list">
-                    <div class="project-card">
+
+                    <div class="project-card reveal">
                         <img src="./assets/pokedex.gif" alt="Pokédex App demo" class="project-img">
                         <div class="project-card-body">
                             <h3 class="project-title">Pokédex App</h3>
-                            <p class="project-desc">A web-based Pokédex built with <strong>React</strong> and <strong>TypeScript</strong>. Users can search for Pokémon, view detailed information, and filter by type. The app fetches data from the <strong>PokéAPI</strong> and is fully responsive.</p>
+                            <p class="project-desc">A web-based Pokédex where users can search for Pokémon, view detailed stats, and filter by type. Fetches live data from the PokéAPI and is fully responsive.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">PokéAPI</span>
+                            </div>
                             <div class="project-links">
-                                <a href="https://github.com/Reyuuh/PokeDex" target="_blank" class="project-link">View Project</a>
+                                <a href="https://github.com/Reyuuh/PokeDex" target="_blank" class="project-link">GitHub</a>
                             </div>
                         </div>
                     </div>
-                    <div class="project-card">
+
+                    <div class="project-card reveal">
+                        <div class="project-img-placeholder">🏴‍☠️</div>
                         <div class="project-card-body">
                             <h3 class="project-title">One Piece Card Shop</h3>
-                            <p class="project-desc">An online card shop inspired by <strong>One Piece</strong>, built with <strong>PHP</strong> and <strong>MySQL</strong>. Users can browse cards, filter by category, and view detailed product information. The backend handles database storage for cards and categories.</p>
+                            <p class="project-desc">An online card shop inspired by One Piece. Users can browse cards, filter by category, and view detailed product information. Full backend with database storage.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">HTML/CSS</span>
+                            </div>
                             <div class="project-links">
-                                <a href="https://github.com/Reyuuh/OnePiece-Cardshop" target="_blank" class="project-link">View Project</a>
+                                <a href="https://github.com/Reyuuh/OnePiece-Cardshop" target="_blank" class="project-link">GitHub</a>
                             </div>
                         </div>
                     </div>
-                    <div class="project-card">
+
+                    <div class="project-card reveal">
                         <img src="./assets/eshop.png" alt="E-Shop SoulCaller screenshot" class="project-img">
                         <div class="project-card-body">
                             <h3 class="project-title">E-Shop SoulCaller</h3>
-                            <p class="project-desc">A fullstack e-commerce platform with product browsing, shopping cart, user authentication, and <strong>Stripe</strong> payment integration. Built with <strong>React</strong>, <strong>Redux</strong>, and <strong>SCSS</strong> on the frontend, and <strong>Node.js</strong>, <strong>Express</strong>, <strong>MySQL</strong>, and <strong>JWT</strong> on the backend.</p>
+                            <p class="project-desc">Fullstack e-commerce platform with product browsing, shopping cart, user authentication, and Stripe payment integration.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Redux</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
                             <div class="project-links">
                                 <a href="https://github.com/Reyuuh/eshop-soulcaller-frontend" target="_blank" class="project-link">Frontend</a>
                                 <a href="https://github.com/Reyuuh/eshop-soulcaller-backend" target="_blank" class="project-link">Backend</a>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -133,12 +154,11 @@
 
 <section id="tech-stack">
     <div class="section-container">
-        <div class="tech-stack__content">
+        <div class="tech-stack__content reveal">
             <h2 class="title">Tech Stack</h2>
             <div class="tech-stack__categories">
 
-                <!-- Frontend -->
-                <div class="tech-stack__card">
+                <div class="tech-stack__card reveal">
                     <h3>Frontend</h3>
                     <div class="tech-stack__icons">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="icon" alt="HTML5" title="HTML5" />
@@ -151,8 +171,7 @@
                     </div>
                 </div>
 
-                <!-- Backend -->
-                <div class="tech-stack__card">
+                <div class="tech-stack__card reveal">
                     <h3>Backend</h3>
                     <div class="tech-stack__icons">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" class="icon" alt="Node.js" title="Node.js" />
@@ -164,8 +183,7 @@
                     </div>
                 </div>
 
-                <!-- Tools -->
-                <div class="tech-stack__card">
+                <div class="tech-stack__card reveal">
                     <h3>Tools</h3>
                     <div class="tech-stack__icons">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="icon" alt="Git" title="Git" />
@@ -182,11 +200,9 @@
     </div>
 </section>
 
-
-
 <section id="contact">
   <div class="section-container">
-    <div class="contact__content">
+    <div class="contact__content reveal">
       <h2 class="title">Contact</h2>
       <p class="contact__text">
         Open to internship (LIA) opportunities, collaborations, and freelance projects.
@@ -240,7 +256,17 @@
   </div>
 </section>
 
-    
+<footer>
+    <div class="footer__content">
+        <p class="footer__name">Inti Rodriguez Flores</p>
+        <p class="footer__copy">© 2026 · Built with HTML, CSS & JavaScript</p>
+        <div class="footer__links">
+            <a href="https://github.com/Reyuuh/" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/inti-rodrigo/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
     <script src="src/script.js"></script>
 </body>
 </html>
