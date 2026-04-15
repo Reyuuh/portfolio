@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node *)",
+      "Bash(git -C \"c:/Users/intir/OneDrive/Skrivbord/Portfolio Inti\" log --format=\"%H %ad %s\" --date=short)",
+      "Bash(git -C 'c:/Users/intir/OneDrive/Skrivbord/Portfolio Inti' log --format='%ad' --date=short -1)",
+      "Bash(grep -v \"^$\\(git -C 'c:/Users/intir/OneDrive/Skrivbord/Portfolio Inti' log --format='%ad' --date=short -1\\)$\")",
+      "Bash(git *)"
+    ]
+  }
+}
