@@ -436,6 +436,12 @@ section {
   transform: scale(1.04);
 }
 
+.project-card > a {
+  display: block;
+  overflow: hidden;
+  line-height: 0;
+}
+
 .project-card-body {
   padding: 1.25rem 1.25rem 1.5rem;
   display: flex;
