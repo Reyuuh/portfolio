@@ -71,3 +71,27 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 revealEls.forEach(el => observer.observe(el));
+
+// Click-to-copy contact items
+document.querySelectorAll('[data-copy]').forEach(el => {
+  let resetTimer;
+  el.addEventListener('click', async () => {
+    const text = el.dataset.copy;
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch {
+      // Fallback for older browsers / non-secure contexts
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      ta.remove();
+    }
+    el.classList.add('copied');
+    clearTimeout(resetTimer);
+    resetTimer = setTimeout(() => el.classList.remove('copied'), 1800);
+  });
+});

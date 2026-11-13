@@ -304,13 +304,18 @@
           </div>
         </a>
 
-        <a class="contact__item" href="tel:+46700544729">
-          <img src="./assets/telephone.png" alt="Phone" class="icon contact-icon">
+        <button type="button" class="contact__item contact__item--copy" data-copy="+46700544729" title="Click to copy" aria-label="Copy phone number +46 70 054 47 29">
+          <img src="./assets/telephone.png" alt="" class="icon contact-icon">
           <div class="contact__meta">
             <span class="contact__label">Phone</span>
             <span class="contact__value">+46 70 054 47 29</span>
           </div>
-        </a>
+          <span class="copy-indicator" aria-hidden="true">
+            <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span class="copy-feedback">Copied!</span>
+          </span>
+        </button>
 
         <a class="contact__item" href="https://www.linkedin.com/in/inti-rodrigo/" target="_blank" rel="noopener">
           <img src="./assets/linkedin.png" alt="LinkedIn" class="icon contact-icon">

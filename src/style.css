@@ -586,7 +586,7 @@ section {
 
 .contact__details {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr;
   gap: 0.75rem;
   margin: 1.75rem 0 2rem 0;
 }
@@ -616,6 +616,55 @@ section {
 .contact-icon {
   height: 2rem;
   width: 2rem;
+}
+
+/* Click-to-copy contact item */
+.contact__item--copy {
+  font: inherit;
+  width: 100%;
+  cursor: copy;
+  position: relative;
+}
+
+.copy-indicator {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--text-muted);
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.contact__item--copy:hover .copy-indicator,
+.contact__item--copy:focus-visible .copy-indicator,
+.contact__item--copy.copied .copy-indicator {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.copy-indicator .check-icon,
+.copy-indicator .copy-feedback {
+  display: none;
+}
+
+.copy-feedback {
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.contact__item--copy.copied .copy-indicator {
+  color: #16a34a;
+}
+
+.contact__item--copy.copied .copy-icon {
+  display: none;
+}
+
+.contact__item--copy.copied .check-icon,
+.contact__item--copy.copied .copy-feedback {
+  display: inline;
 }
 
 .contact__meta {
